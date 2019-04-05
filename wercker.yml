@@ -24,7 +24,13 @@ build:
         code: |
           cat ./config.json
           echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"          
+          echo "npm version $(npm -v) running"
+   after-steps:
+    - slack-notifier:
+            url: $SLACK_URL
+            channel: notifications
+            username: krishna
+            branch: master
 docker-build:
   steps:
     - internal/docker-build:
