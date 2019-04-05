@@ -59,3 +59,7 @@ kubernetes-deploy:
         cwd: $WERCKER_ROOT
         insecure-skip-tls-verify: true
         command: -n $K8SNAMESPACE apply -f backend-api-deployment.yaml
+  after-steps:
+    - auxesis/slack-notify-via-webhook:
+      webhook_url: $SLACK_WEBHOOK_URL
+      channel: "@crazyc0d3r"
