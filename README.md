@@ -24,8 +24,3 @@ A simple Stateless , Highly scalable Express Based REST API build on MERN Stack.
 * k8s- replica set config 
 
 ## Step 3 : Deploy API Backend Layer 
-
-
-
-
-
