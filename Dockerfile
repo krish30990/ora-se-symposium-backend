@@ -1,5 +1,5 @@
 FROM node:latest
-MAINTAINER Vamsi Ramakrishnan "vamsi.ramakrishnan@oracle.com"
+MAINTAINER Krishnan "k.krishnan.90@gmail.com"
 
 RUN mkdir se-symposium-backend
 WORKDIR se-symposium-backend
