@@ -28,7 +28,7 @@ build:
   after-steps:
     - auxesis/slack-notify-via-webhook:
       webhook_url: $SLACK_WEBHOOK_URL
-      channel: "#crazyc0d3r"
+      channel: "@crazyc0d3r"
       
 docker-build:
   steps:
